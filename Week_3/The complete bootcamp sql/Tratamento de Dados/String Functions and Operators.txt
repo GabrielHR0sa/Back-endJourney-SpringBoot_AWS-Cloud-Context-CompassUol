@@ -1,0 +1,15 @@
+STRING FUNCTIONS
+
+SELECT first_name || last_name
+FROM customer;
+	// junta um com o outro, sendo strings
+
+
+SELECT first_name || ' ' || last_name
+FROM customer;
+	// junta um com o outro, com espaço no meio
+
+
+SELECT upper(first_name) || ' ' || upper(last_name)
+FROM customer;
+	// transforma as strings para upperCase

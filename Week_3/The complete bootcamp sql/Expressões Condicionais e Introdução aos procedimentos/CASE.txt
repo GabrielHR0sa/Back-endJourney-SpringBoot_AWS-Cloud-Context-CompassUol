@@ -1,0 +1,43 @@
+CASE - utilizado para executar o SQL quando uma condição for atendida
+semelhante ao IF/ELSE
+
+SYNTAX:
+
+CASE
+	WHEN condition1 THEN result1
+	WHEN condition2 THEN result2
+	ELSE some_other_result
+END
+---------------------------------------------------
+
+SELECT customer_id,
+CASE
+	WHEN (customer_id <= 100) THEN 'Premium'
+	WHEN (customer_id BETWEEN 100 AND 200) THEN 'Plus'
+	ELSE 'Comon Client'
+END AS customer_class
+FROM customer
+	// caso o id seja menor que 100 premium, caso seja maior até 200 plus
+	// mesma funcionalidade de IF/ELSE
+	// END AS finaliza o program nomeando o retorno da tela
+-----------------------------------------------------
+
+SELECT customer_id,
+CASE customer_id
+	WHEN 2 THEN 'Winner' 
+	WHEN 5 THEN 'Second Place'
+	ELSE 'Normal'
+END AS raffle_results
+FROM customer
+	//já deixa o customer_id selecionado, o que possibilita apenas a inserção dos valores no WHEN
+------------------------------------------------------------
+
+SELECT 
+SUM(CASE rental_rate
+	WHEN 0.99 THEN 1 
+	ELSE 0
+END)  AS numer_of_bargains 
+FROM film
+	//soma os filmes com preço de 0.99
+---------------------------------------------------------------
+

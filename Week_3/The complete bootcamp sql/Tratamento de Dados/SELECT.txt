@@ -1,0 +1,12 @@
+Selecionar o banco desejado, abrir Query Tool para executar os comandos
+
+SELECT nome_coluna FROM nome_tabela
+
+selecionando 1
+SELECT col1 FROM tab1
+
+selecionando mais de 1
+SELECT cols1, col2 FROM tab1
+
+selecionando todos
+SELECT * FROM tab1

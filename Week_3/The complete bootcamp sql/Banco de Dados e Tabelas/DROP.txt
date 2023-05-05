@@ -1,0 +1,5 @@
+DROP - exclui a coluna ou a tabela requirida
+
+ALTER TABLE new_info
+DROP COLUMN people
+	// exclui a coluna people 

@@ -1,0 +1,28 @@
+UPDATE - atualiza o set na linha definida por primeiro, ou seja
+altera o mail(SET), na coluna onde o nome é Jhon
+
+para update, utilizar o intelliSheel do Studio3T,
+SYNTAX:
+db.student.update(
+    {
+        "name" : "Jhon" 
+    },
+    {
+        $set : {
+            "mail" : "jhon@gmail.com"
+        } 
+    }
+)
+------------------------------------
+	//alterando mais de 1 valor ao mesmo tempo
+db.student.update(
+    {
+        "name" : "Peter" 
+    },
+    {
+        $set : {
+            "mail" : "peter_1@gmail.com",
+            "name" : "Peter Joseph"
+        } 
+    }
+)

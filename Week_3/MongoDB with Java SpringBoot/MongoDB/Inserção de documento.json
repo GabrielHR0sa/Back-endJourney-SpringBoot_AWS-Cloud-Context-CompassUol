@@ -1,0 +1,14 @@
+{
+    "name" : "Steve",
+    "mail" : "steve@gmail.com",
+    "subjects" : [
+        {
+            "subject_name" : "Java",
+            "marks_obtained" : 70
+        },
+        {
+            "subject_name" : "MongoDB",
+            "marks_obtained" : 80
+        }
+    ] 
+}

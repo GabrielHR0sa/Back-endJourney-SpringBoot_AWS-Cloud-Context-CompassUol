@@ -1,0 +1,8 @@
+GROUP BY - agrupa pela coluna definida, utiliza-se para executar outras funções como soma por exemplo, e saber a organização pela coluna
+
+SELECT DATE(payment_date), SUM(amount) FROM payment
+GROUP BY DATE(payment_date)
+ORDER BY SUM (amount) DESC
+	//agrupa pela data de pagamento a soma das transações efetuadas em cada data, da tabela payment
+-------------------------------------
+

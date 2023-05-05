@@ -1,0 +1,23 @@
+CREATE - para criar tabelas
+
+deve-se acessar o Databases -> com o botão direito -> Create -> database -> nomear o banco e salvar.
+Após a criação do banco -> botão direito -> refresh -> Query tool.
+No Query Tool, utilizar os comandos abaixo.
+
+-----------------------------------------------------
+SYNTAX:
+
+CREATE TABLE table_name(
+	column_name TYPE comlumn_constraint,
+	column_name TYPE comlumn_constraint,
+);
+------------------------------------------------------
+
+CREATE TABLE account(
+	user_id SERIAL PRIMARY KEY,
+	username VARCHAR(50) UNIQUE NOT NULL,
+	password VARCHAR(50) NOT NULL,
+	email VARCHAR(250) UNIQUE NOT NULL,
+	created_on TIMESTAMP NOT NULL,
+	last_login TIMESTAMP
+);

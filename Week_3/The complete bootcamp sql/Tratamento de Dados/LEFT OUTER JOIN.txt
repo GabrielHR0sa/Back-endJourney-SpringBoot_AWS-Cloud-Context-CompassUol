@@ -1,0 +1,17 @@
+LEFT OUTER JOIN - seleciona tudo da tabela a esquerda, e compara com a outra tabela, caso haja alguma informação
+que tenha em amabas as tabelas, aparece junto com a tabela da esquerda, o resto das informações que não for igual
+não aparece
+
+SELECT film.film_id, title, inventory_id,store_id
+FROM film
+LEFT JOIN inventory ON
+inventory.film_id = film.film_id
+	// junta as informações das tabelas inventory e film, e exibe as que são semelhantes, junto com as informações da tabela a esquerda
+------------------------------------------------------
+
+SELECT film.film_id, title, inventory_id,store_id
+FROM film
+LEFT JOIN inventory ON
+inventory.film_id = film.film_id
+WHERE inventory.film_id IS NULL
+	//seleciona os campos que estão nulos e que estão em ambas as tabelas

@@ -1,0 +1,7 @@
+SELECT DISTINCT nome_coluna FROM nome_tabela
+seleciona somente o elemento único da tabela, aquele que não se repete, caso haja mais de 1 elemento unico, exibe todos eles
+
+EX:
+SELECT DISTINCT valores FROM produto
+
+retorna os valores que diferem, somente 1x

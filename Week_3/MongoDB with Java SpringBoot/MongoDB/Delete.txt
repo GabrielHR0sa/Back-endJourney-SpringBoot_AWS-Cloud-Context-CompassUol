@@ -1,0 +1,14 @@
+DELETE - 
+
+Assim como o update, é necessário acessar pelo IntelliShell,
+
+	//deleta tudo que possuir a referencia definida
+	//caso não haja nenhuma definição, deleta tudo da tabela afrente de db.
+SYNTAX:
+db.student.remove(
+
+    {
+        "name" : "Jhon"
+    }
+
+)

@@ -1,0 +1,25 @@
+ALTER - altera atributos das colunas, adiciona, remove, altera, configura as restrições
+
+Removing Columns
+- ALTER TABLE table_name - altera o nome da tabela
+- DROP COLUMN col_name - exclui a coluna 
+
+Alter Constraints
+- ALTER TABLE table_name - altera o nome da tabela
+- ALTER COLUMN col_name - altera o nome da coluna
+- SET NOT NULL
+------------------------------------
+
+ALTER TABLE information
+RENAME TO new_info;
+	// renomeia a tabela information para new_info
+
+ALTER TABLE new_info
+RENAME COLUMN person TO people;
+	//renomeia o nome da coluna person para people
+
+ALTER TABLE new_info
+ALTER COLUMN people DROP NOT NULL
+	//exclui o not null da coluna people
+
+

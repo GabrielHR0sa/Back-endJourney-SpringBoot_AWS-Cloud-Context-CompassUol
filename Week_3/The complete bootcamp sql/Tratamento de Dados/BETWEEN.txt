@@ -1,0 +1,17 @@
+BETWEEN - está entre low and high
+NOT BETWEEN - não está entre low e high
+
+---------------------------
+SELECT * FROM payment
+WHERE amount BETWEEN 8 AND 9;
+	//seleciona tudo da tabela payment onde o amount estiver entre 8 e 9.
+
+----------------------------
+SELECT COUNT (*) FROM payment
+WHERE amount BETWEEN 8 AND 9;
+	//exibe a quantidade de amount que estão entre 8 e 9
+
+---------------------------
+SELECT COUNT (*) FROM payment
+WHERE amount NOT BETWEEN 8 AND 9;
+	//exibe a quantidade de amount que não estão entre 8 e 9

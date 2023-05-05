@@ -1,0 +1,14 @@
+Or Operator no query - condição de busca de informações na tabela com as duas chaves de busca
+ou uma ou outra
+
+SYNTAX:
+ {
+    $or : [
+        {
+            "name" : "eter"
+        },
+        {
+            "mail" : "peter@gmail.com"
+        }
+    ]
+}

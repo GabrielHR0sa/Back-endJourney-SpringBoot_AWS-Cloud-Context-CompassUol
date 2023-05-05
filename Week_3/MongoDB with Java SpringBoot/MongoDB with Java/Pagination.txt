@@ -1,0 +1,11 @@
+Page No             Skip            Limit(page size)
+    1                   0                          10
+    2                   10                         10   
+    3                   20                         10
+
+Page No -> numero da página
+Skip -> pula o valor definido e acrescenta mais o Limit(page size)
+EX: na pg 2, pula os 10 primeiros e seleciona mais 10, ou seja do 11 ao 20
+na pg 3, pula os 10 primeiros e seleciona mais 10, ou seja do 21 ao 30
+
+Limit -> limita o número de arquivos que serão exibidos

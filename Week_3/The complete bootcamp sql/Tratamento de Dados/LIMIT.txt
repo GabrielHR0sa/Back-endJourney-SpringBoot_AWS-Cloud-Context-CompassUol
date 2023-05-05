@@ -1,0 +1,7 @@
+LIMIT - limita a quantidade de linhas a serem exibidas
+
+EX:
+SELECT * FROM payment
+ORDER BY payment_date
+LIMIT 10;
+	//seleciona tudo da tabela payment, ordenando pela data de pagamento, e limita a exibição para somente 10 linhas;

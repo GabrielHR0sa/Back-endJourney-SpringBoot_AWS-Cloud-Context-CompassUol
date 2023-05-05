@@ -1,0 +1,17 @@
+HAVING - substitui o WHERE quando se utiliza somas em grupos
+
+EX:
+
+SELECT customer_id, SUM(amount) FROM payment
+GROUP BY customer_id
+HAVING SUM(amount) > 100;
+
+	// agrupa pelo customer_id, e soma as transações efetuadas por cada customer_id, e no final separa
+para exibir os que forem maiores que 100 pela função HAVING
+----------------------------------------------------
+
+SELECT customer_id COUNT(*) FROM payment
+GROUP BY customer_id
+HAVING COUNT(*) >= 40;
+	// seleciona os id dos clientes da tabela payment, agrupa pelo id do cliente, e seleciona para exibir 
+somente os que são iguais ou acima de 40

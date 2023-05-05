@@ -1,0 +1,6 @@
+o banco exercises possui dois schemas, portanto na hora de selecionar uma tabela no Query tool 
+deve-se colocar o schema.nome_tabela
+
+EX:
+SELECT * FROM cd.bookings;
+	//acessa a tabela bookings no schema cd

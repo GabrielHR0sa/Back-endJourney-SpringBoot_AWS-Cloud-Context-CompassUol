@@ -1,0 +1,15 @@
+INNER JOIN - combina informações semelhantes de duas tabelas 
+
+EX:
+SELECT * FROM tabelaA // seleciona a primeira tabela
+INNER JOIN tabelaB	// compara com a segunda tabela
+ON tabelaA.col_match = tabelaB.col_match	// atribui as colunas a serem comparadas EX: ON tabelaA.name = tabelaB.name
+-------------------------------------------------------
+
+SELECT payment_id, payment.customer_id, first_name  //seleciona as colunas payment_id e customer_id da tabela payment, 
+definindo a tabela no customer_id pois exitem nas duas tabelas, junto com o first_name da tabela customer 
+
+FROM payment
+INNER JOIN customer
+ON payment.customer_id = customer.customer_id;
+------------------------------------------------------------

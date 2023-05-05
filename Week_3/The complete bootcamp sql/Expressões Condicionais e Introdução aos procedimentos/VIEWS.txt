@@ -1,0 +1,9 @@
+VIEW - Criado para facilitar o código, onde se referenciam tabelas mais de uma vez
+
+
+CREATE VIEW customer_info AS
+SELECT first_name, last_name, address FROM customer
+INNER JOIN address
+ON customer.address_id = address.address_id;
+	// ao invés de digitar todo o codigo de referenciação novamente, 
+basta dar um SELECT direto na VIEW (customer_info)

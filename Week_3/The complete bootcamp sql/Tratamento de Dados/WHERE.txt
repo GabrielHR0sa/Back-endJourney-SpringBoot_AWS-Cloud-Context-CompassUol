@@ -1,0 +1,36 @@
+WHERE - adiciona condições nas consultas
+
+SELECT nome_coluna FROM nome_tabela 
+WHERE condição;
+
+
+EX:SELECT name FROM table 
+WHERE name = 'David';
+	//seleciona os nomes da tabela table onde o nome é David
+
+
+SELECT name FROM table 
+WHERE name = 'David' AND choice = 'Red';
+	//seleciona os nomes da tabela table onde o nome é David e adiciona outra condição
+onde seleciona pelo nome David e a escolha Red
+
+-------------------------------------
+pode-se utilizar os comparadores lógicos como
+< - menor que
+> - maior que
+= - igual a
+<= - menor ou igual a
+>= - maior ou igual a 
+!= - diferente de
+-----------------------------------------
+para adicionar outra comparação ao WHERE utiliza-se
+OR - ou
+AND - e
+NOT - não
+
+--------------------------------------
+SELECT COUNT(first_name) FROM customer
+WHERE first_name = 'Jared';
+
+Seleciona a quantidade de pessoas com o nome jared na tabela customer
+

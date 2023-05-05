@@ -1,0 +1,9 @@
+Constrains - são restrições, como por exemplo
+NOT NULL ou UNIQUE - são definições para que se restrinja o que vai ser inserido
+PRIMARY KEY e FOREIGN KEY - define a chave primaria e as estrangeiras
+CHECK - checa condições 
+EXCLUSION
+
+Podem ser utilizados em uma linha, ou na tabela toda
+
+Contrains são opções de restrições na criação de tabelas

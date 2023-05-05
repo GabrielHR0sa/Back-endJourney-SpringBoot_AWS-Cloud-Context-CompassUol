@@ -1,0 +1,7 @@
+db.student.remove(
+
+    {
+        "name" : "Jhon"
+    }
+
+)

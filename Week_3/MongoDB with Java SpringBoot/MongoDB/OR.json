@@ -1,0 +1,10 @@
+ {
+    $or : [
+        {
+            "name" : "eter"
+        },
+        {
+            "mail" : "peter@gmail.com"
+        }
+    ]
+}

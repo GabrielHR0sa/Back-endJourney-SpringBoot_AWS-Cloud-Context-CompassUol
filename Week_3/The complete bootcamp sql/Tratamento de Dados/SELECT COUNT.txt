@@ -1,0 +1,5 @@
+SELECT COUNT * FROM nome_tabela;
+Exibe a quantidade total de linhas daquela coluna
+
+SELECT COUNT (DISTINCT nome_coluna) FROM nome_tabela
+Exibe a quantidade de valores diferentes daquela coluna naquela tabela

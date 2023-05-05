@@ -1,0 +1,7 @@
+FULL OUTER JOIN - seleciona tudo das tabelas denominadas
+
+EX:
+SELECT * FROM customer	//seleciona tudo da tabela customer
+FULL OUTER JOIN payment	//seleciona tudo da tabela payment
+ON customer.customer_id = payment.customer_id;
+-----------------------------------------------------

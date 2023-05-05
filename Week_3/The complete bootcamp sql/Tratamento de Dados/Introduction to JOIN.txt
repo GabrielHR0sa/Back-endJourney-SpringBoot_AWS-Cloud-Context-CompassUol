@@ -1,0 +1,21 @@
+INNER JOINS
+OUTER JOINS
+FULL JOINS
+UNIONS
+AS
+
+SELECT amount AS rental_price FROM payment;
+	//seleciona a coluna amount e a exibe com o nome rental_price
+------------------------------------------
+
+SELECT customer_id, SUM(amount) AS total_spent FROM payment	//seleciona customer_id, soma o amount, nomeia o amount como total_spent da tabela price
+GROUP BY customer_id	// agrupa as informações por customer_id
+HAVING SUM(amount) > 100	// separa somente as informações da soma que forem maiores que 100
+
+AS - renomeia a coluna na saída de dados, não pode ser utilizado como nome para outras funções
+-------------------------------------------------
+
+SELECT customer_id, SUM(amount) AS total_spent FROM payment
+GROUP BY customer_id
+HAVING total_spent
+	// Dá erro pois total_spent não pode ser utilizado, apenas na saída de dados

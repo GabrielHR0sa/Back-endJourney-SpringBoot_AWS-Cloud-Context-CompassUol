@@ -1,0 +1,8 @@
+In query - seleciona uma informação definindo o dado a ser localizado
+
+SYNTAX:
+{
+   "name" : {
+       $in : ["Jhon", "Peter"]
+   }
+}

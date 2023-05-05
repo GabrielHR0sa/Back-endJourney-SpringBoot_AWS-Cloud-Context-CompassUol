@@ -1,0 +1,10 @@
+db.student.update(
+    {
+        "name" : "Jhon" 
+    },
+    {
+        $set : {
+            "mail" : "jhon@gmail.com"
+        } 
+    }
+)

@@ -1,0 +1,14 @@
+CHECK - restrição de verificação, restringe o tipo de informação que vai ser adicionado
+
+EX:
+
+CREATE TABLE employees(
+	emp_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	birthdate DATE CHECK (birthdate > '1900-01-01'), // restringe o anivesario para maior que a data 
+	hire_date DATE CHECK (hire_date > birthdate), // restringe que hire_date seja maior que birthdate
+	salary INTEGER CHECK (salary > 0) // restringe que o salario seja maior que 0
+);
+
+	//inserir valores que não atendem ao CHECK ocasionam em erros

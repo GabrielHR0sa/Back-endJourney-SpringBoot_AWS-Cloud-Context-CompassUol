@@ -1,0 +1,7 @@
+RIGHT JOIN - junta as informações semelhantes de ambas as tabelas e as exibe na tabela a diereita
+- a ordem importa tanto para LEFT JOIN quanto para RIGHT JOIN
+
+SELECT film.film_id, title, inventory_id,store_id
+FROM film
+RIGHT JOIN inventory ON
+inventory.film_id = film.film_id

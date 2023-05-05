@@ -1,0 +1,14 @@
+Operador AND no Query - busca informações com a primeira chave de requisição e com a segunda
+ou seja, retorna os valores na tabela que possuem ambos os valores
+
+SYNTAX:
+{
+    $and : [
+        {
+            "name" : "Peter"
+        }
+        {
+            "mail" : "peter@gmail.com"
+        }
+    ]
+}

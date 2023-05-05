@@ -1,0 +1,9 @@
+{
+    $and : [
+        {
+            "name" : "Peter"
+        }, {
+            "mail" : "peter@gmail.com"
+        }
+    ]
+}

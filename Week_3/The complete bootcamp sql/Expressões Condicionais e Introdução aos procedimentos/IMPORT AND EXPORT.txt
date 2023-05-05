@@ -1,0 +1,11 @@
+IMPORT and EXPORT 
+importa arquivos externos
+
+criar tabela na planilha
+baixar como .csv
+Criar a tabela no pgAdmin da mesma forma que foi criada na planilha
+botão direito em cima da tabela criada -> import/export
+procurar o arquivo
+ok
+
+para exportar, segue-se o mesmo caminho, mas seleciona-se a opção Export

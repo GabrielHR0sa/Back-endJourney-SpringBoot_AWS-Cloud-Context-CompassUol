@@ -1,0 +1,11 @@
+Chave primaria - coluna unica para identificação de cada linha
+como um ID por exemplo, onde cada linha possui o seu unico ID, algo que não se repete
+
+Chave estrangeira - chave primaria de outra tabela conectada com uma que já possui chave primaria
+chaves estrangeiras são uma forma de referenciar outra tabela
+
+-------------------------------------------
+
+no pgAdmin ao entrar na tabela em Contraints é possivel observar as chaves, primaria ou estrangeira
+primaria dourada
+estrangeira prata

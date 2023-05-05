@@ -1,0 +1,24 @@
+UPDATE - atualiza algum valor da tabela
+
+--------------------------------------
+SYNTAX:
+
+UPDATE table_name
+SET column_name = CURRENT_TIMESTAMP
+WHERE column_name IS NULL;
+---------------------------------------
+
+UPDATE account
+SET last_login = CURRENT_TIMESTAMP;
+	//alterando o last_login para o tempo e data atuais
+------------------------------------------
+
+UPDATE account
+SET last_login = created_on;
+	//alterando o last_login para a mesma data de created_on
+------------------------------------------
+
+UPDATE account
+SET last_login = created_on;
+RETURNING email, created_on, last_login;
+	//altera o last_login e retorna os valores pedidos, email, created_on e last_login

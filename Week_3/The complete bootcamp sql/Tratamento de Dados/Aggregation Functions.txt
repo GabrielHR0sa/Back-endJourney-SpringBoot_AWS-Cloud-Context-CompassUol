@@ -1,0 +1,29 @@
+MIN() - minimo
+MAX() - maximo
+AVG() - media
+ROUND(valor,casas decimais) - aproximado
+SUM() - soma dos valores
+
+
+SELECT MIN(replacement_cost) FROM film;
+	//seleciona o menor (nome_coluna) da tabela nome_tabela
+----------------------------------------
+
+SELECT MAX(replacement_cost) FROM film;
+	//seleciona o maior (nome_coluna) da tabela nome_tabela
+----------------------------------------
+
+SELECT MIN(replacement_cost), MAX(replacement_cost) FROM film;
+	//seleciona o menor e o maior
+----------------------------------------
+
+SELECT AVG(replacement_cost) FROM film;
+	//seleciona a média dos valores
+----------------------------------------
+
+SELECT ROUND(AVG(replacement_cost),2) FROM film;
+	//aproxima o resultado da função AVG para 2 casas depois da vírgula
+----------------------------------------
+
+SELECT SUM(replacement_cost) FROM film;
+	// soma os valores da coluna dentro do parenteses

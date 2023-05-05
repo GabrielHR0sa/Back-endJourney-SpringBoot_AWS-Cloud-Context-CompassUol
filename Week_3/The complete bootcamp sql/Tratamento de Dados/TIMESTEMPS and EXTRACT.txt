@@ -1,0 +1,42 @@
+TIME - contem somente tempo
+DATE - contem somente data
+TIMESTAMP - contem data e tempo
+-----------------------------------------------
+TIMESTAMPTZ - contem data, tempo e fuso-horário
+TIMEZONE
+NOW
+TIMEOFDAY
+CURRENT_TIME
+CURRENT_DATE
+-------------------------------------------------
+
+EX:
+SHOW ALL - exibe os parametros
+SHOW TIMEZONE - mostra o fuso horário
+SELECT NOW() - exibe o TIMESTAMPS, com horários, data, fuso horário
+SELECT TIMEOFDAY() - exibe o dia, horário data e fuso
+SELECT CURRENT_TIME - exibe o horário atual com o duso
+SELECT CURRENT_DATE - exibe a data atual
+----------------------------------------------------
+
+EXTRACT - retira a informação da coluna definida
+EX:
+SELECT EXTRACT(YEAR FROM payment_date) 	//seleciona somente o ano da coluna payment_date
+FROM payment;
+
+pode-se utilizar:
+EXTRACT YEAR
+EXTRACT MONTH
+EXTRACT DAY
+EXTRACT WEEK
+EXTRACT QUARTER
+--------------------------------------------------------
+
+SELECT AGE(payment_date)
+FROM payment;
+	//seleciona o payment_date, e transforma em idade
+----------------------------------------------------------
+
+SELECT TO_CHAR(payment_date, 'DD/MM/YYYY')
+FROM payment;
+	//formata a exibição para como foi declarado entre as aspas

@@ -1,0 +1,16 @@
+IN - limita as opções de busca 
+
+EX:
+SELECT * FROM payment
+WHERE amount IN (0.99, 1.98, 1.99);
+	//limita a busca para valores que estiverem dentro do IN, os valores definidos nos parenteses
+------------------------------
+
+SELECT COUNT(*) FROM payment
+WHERE amount IN (0.99, 1.98, 1.99);
+	//exibe a quantidade do amount que está em IN
+----------------------------------------------
+
+SELECT COUNT(*) FROM payment
+WHERE amount NOT IN (0.99, 1.98, 1.99);
+	//exibe a quantidade de amount que não está em IN

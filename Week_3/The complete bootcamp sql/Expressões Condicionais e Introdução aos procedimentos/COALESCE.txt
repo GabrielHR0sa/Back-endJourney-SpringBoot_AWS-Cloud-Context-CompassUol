@@ -1,0 +1,4 @@
+COALESCE - altera os valores nulos para 0, percorre os valores denominados e altera os que são nulos por 0
+
+SELECT item,(price-COALESCE(discount,0))
+AS final FROM table;

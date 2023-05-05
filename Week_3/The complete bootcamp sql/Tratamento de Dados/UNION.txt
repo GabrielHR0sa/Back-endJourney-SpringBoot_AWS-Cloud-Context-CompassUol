@@ -1,0 +1,8 @@
+UNION - une as informações definidas, uma acima da outra
+
+EX:
+SELECT * FROM Sales2021_Q1
+UNION
+SELECT * FROM Sales2021_Q2
+	//seleciona as info da primeira tabela e da segunda, e as exibe unidas, começando pela primeira
+e abaixo preenche com a segunda

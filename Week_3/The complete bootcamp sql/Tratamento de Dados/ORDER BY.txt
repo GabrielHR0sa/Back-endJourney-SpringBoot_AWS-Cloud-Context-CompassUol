@@ -1,0 +1,24 @@
+ORDER BY - ordena conforme a classificação de busca
+
+SELECT company, name, sales FROM table
+ORDER BY company, sales;
+	//seleciona as companhias, nomes e vendas da tabela table, e organiza a exibição por companhia e por vendas
+
+----------------------------
+SELECT * FROM customer
+ORDER BY first_name;
+	// seleciona tudo da tabela custormer, ordenando por primeiro nome;
+
+----------------------------
+SELECT * FROM customer
+ORDER BY first_name ASC;
+	// ordena de forma crescente
+
+SELECT * FROM customer
+ORDER BY first_name DESC;
+	// ordena de forma descrescente
+
+-----------------------------
+SELECT first_name, last_name, store_id FROM customer
+ORDER BY store_id DESC,first_name ASC;
+	//ordena começando pelo store_id de forma descrescente, e depois por primeiro nome de forma crescente

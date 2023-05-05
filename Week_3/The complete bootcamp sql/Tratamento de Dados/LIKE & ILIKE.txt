@@ -1,0 +1,16 @@
+LIKE - busca por termos relacionados e parecidos com o definido
+
+EX: 
+SELECT * FROM customer
+WHERE first_name LIKE 'J%';
+	// seleciona baseado nos nomes que começam com J
+	// completa o restante, caso seja no final, busca termos que começem com j 
+	// caso seja no começo, busca os que terminam com j
+	// caso seja no meio, busca os que possuem j no nome, seja em qual ordem
+-----------------------------------
+
+SELECT COUNT(*) FROM customer
+WHERE first_name LIKE 'J%';
+	// exibe a quantidade de nomes que começam com J
+
+SQL é case Sensitive, portanto Colocar a letra maiúscula no começo caso sejam cadastrados com letra maiúscula

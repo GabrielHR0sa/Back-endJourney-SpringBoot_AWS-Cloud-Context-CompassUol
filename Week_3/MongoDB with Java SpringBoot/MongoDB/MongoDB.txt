@@ -1,0 +1,20 @@
+MongoDB é a maior linguagem NoSQL utilizada no mundo
+Guarda os dados em JSON 
+Estrutura flexivel
+--------------------------------------------------------------
+
+Diferença entre SQL e NoSQL
+
+No SQL, as informações são salvas em tabelas diferentes, e elas se comunicam através de
+chaves estrangeiras
+
+No NoSQL, as informações ficam armazenadas em um unico arquivo, não há relacionamentos, é mais rápido que o SQL
+
+-------------------------------------------------
+SQL		|	NoSQL
+Data Base	|	Database
+Table		|	Collection
+Column		|	Field
+Row		|	Document
+Foreign Key	|	Sub Document(Reference)
+-------------------------------------------------

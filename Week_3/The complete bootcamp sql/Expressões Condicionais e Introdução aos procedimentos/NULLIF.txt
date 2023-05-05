@@ -1,0 +1,9 @@
+NULLIF - recebe 2 argumentos, caso ambos sejam iguais retorna NULL, caso contrário retorna o primeiro argumento
+
+SELECT (
+	SUM(CASE WHEN department = 'A' THEN 1 ELSE 0 END)/
+	NULLIF(SUM(CASE WHEN department = 'B' THEN 1 ELSE 0 END),0)
+)AS department_ratio
+FROM depts;
+	// se a soma for igual ao segundo argumento passado no caso 0, retorna NULL,
+caso contrário, retorna o primeiro argumento, no caso o resultado da soma

@@ -1,0 +1,21 @@
+Boolean
+True or False
+
+Character
+Char, varchar e text
+
+Numeric
+integer, floating-point number
+
+Temporal
+date, time, timestamp e interval
+
+UUID
+Universally unique identifiers
+
+Array
+Stores an array of strings, numbers 
+
+JSON
+Hstore key-value pair
+Special types such as network address and geometric data

@@ -1,0 +1,11 @@
+CAST - utilizado para conversão de valores, uma string pode virar um integer
+
+SELECT CAST('5' AS INTEGER) AS new_int;
+	//transforma a string '5' em um numero inteiro
+
+SELECT '5'::INTEGER
+	//mesma função mas na forma abreviada
+-------------------------------------------------
+
+SELECT CHAR_LENGTH(CAST(inventory_id AS VARCHAR)) FROM rental
+	//transforma a coluna inventory_id em string, e a função CHAR_LENGTH resulta no comprimento da string

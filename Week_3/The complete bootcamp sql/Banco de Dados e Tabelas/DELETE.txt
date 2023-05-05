@@ -1,0 +1,10 @@
+DELETE - apaga os dados da tabela, ou das linhas
+
+DELETE FROM table_name - apaga tudo daquela tabela, quando não há especificação
+
+DELETE FROM job
+WHERE job_name = 'Teatcher'
+RETURNING job_id, job_name;
+	//deleta um campo específico da tabela definida, e retorna os valores requisitados
+
+
