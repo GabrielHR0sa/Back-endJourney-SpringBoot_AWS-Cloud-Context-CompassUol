@@ -65,3 +65,39 @@ Métodos -----------------------------------------------------------------------
 	
 	. São as ações que os objtos podem realizar.
 	. Exemplos de métodos: latir(), pular(), brincar()...
+
+Métodos Especiais ---------------------------------------------------------------------------------------
+
+	Metodos acessores
+	- getters
+	
+	Metodos modificadores
+	- setters
+	
+	para cada atributo, é necessário 1 get e 1 set
+
+	Metodo Construtor
+	- constructor
+
+Constructor ----------------------------------------------------------------------------------------
+
+	/* CONSTRUTOR PADRÃO */
+		public Carro(){
+
+		}
+
+	/* CONSTRUTOR COM 2 PARÂMETROS */
+		public Carro(String modelo, double preco){
+			//Se for escolhido o construtor sem a COR do veículo
+			// definimos a cor padrão como sendo PRETA
+			this.cor = “PRETA”;
+			this.modelo = modelo;
+			this.preco = preco;
+		}
+
+	/* CONSTRUTOR COM 3 PARÂMETROS */
+		public Carro(String cor, String modelo, double preco){
+			this.cor = cor;
+			this.modelo = modelo;
+			this.preco = preco;
+		}
