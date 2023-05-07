@@ -1,0 +1,67 @@
+Classe ---------------------------------------------------------------------------------------
+
+	. Uma classe define um tipo de objeto, ou seja, representa a estrutura de dados,
+	  atributos, construtores, métodos...
+	
+	. Exemplo da classe Aluno: Temos os atributos nome, idade e curso. 
+	  Além dos métodos assistirAula(), fazerProva() e calcularNota().
+
+	. Os métodos são criados definindo seu tipo de retorno, no caso o tipo "void",
+	  que significa vazio.
+
+Código:
+
+	public class Aluno{
+		String nome;
+		String curso;
+		int idade;
+	
+		void assistirAula(){
+
+		}
+
+		void fazerProva(){
+
+		}
+
+		void calcularNota(){
+
+		}
+	}
+
+
+Objeto ---------------------------------------------------------------------------------------
+
+	. Um objeto é uma instancia criada a partir de uma determinada classe.
+	
+	. A classe AlunoTeste representa o objeto, dentro dela é preciso chamar o método main.
+
+	. Após instanciar o objeto é possível declarar valores aos atributos e chamar os métodos.
+
+Código:	
+	
+	public class AlunoTeste{
+		public static void main (String [] args){
+	
+			Aluno aluno1 = new Aluno();
+
+			aluno1.nome = "Alana Silva";
+			aluno1.idade = 21;
+			aluno1.curso = "Ciência da Computação";
+
+			aluno1.assistirAula();
+			aluno1.fazerProva();
+			aluno1.calcularNota();
+		}
+	}
+
+
+Atributos ---------------------------------------------------------------------------------------
+
+	. São as características de um objeto, também podem ser chamados de variáveis.
+	. Exemplos de atributos: nome, idade, peso, altura... 
+
+Métodos ---------------------------------------------------------------------------------------
+	
+	. São as ações que os objtos podem realizar.
+	. Exemplos de métodos: latir(), pular(), brincar()...
