@@ -1,0 +1,16 @@
+Unit Test/ Unity Testing - Code written to test code under test
+
+Integration Tests- Designed to test behaviors between objects and parts of the overall system
+
+Functional Tests - Typically means you are testing the ruinning application
+
+------------------------------------------------------------------------
+- The Majority of tests should be Unit Tests
+. Small, fast, light weight tests
+. Very detailed and specific
+
+- Integration Tests
+. Should be next largest category
+
+- Functional Tests 
+. Are smallest and least detailed of the categories
