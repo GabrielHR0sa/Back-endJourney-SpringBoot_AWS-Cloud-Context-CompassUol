@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "e08f727e-1f1f-4fe2-bd70-781a24bfeb47",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27499813"
+	},
+	"item": [
+		{
+			"name": "postProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\" : \"ABC\",\r\n    \"name\" : \"laptop\",\r\n    \"description\" : \"laptop description\",\r\n    \"active\" : \"true\",\r\n    \"imageUrl\" : \"laptop.png\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products/search?query=laptop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "laptop"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
