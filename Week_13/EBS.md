@@ -1,0 +1,17 @@
+<h1 align="center">Elastic Block Store (EBS)</h1>
+
+O Amazon Elastic Block Store (Amazon EBS) oferece volumes de armazenamento em bloco para usar com instâncias do EC2. Os volumes do EBS se comportam como dispoditivos de bloco brutos e não formatados. É possível montar esses volumes como dispositivos em suas instâncias. Os volumes EBS que estão anexados a uma instância são expostos como volumes de armazenamento que persistem independentemente da vida útil da instância. É possível criar um sistema de arquivos sobre esses volumes ou utilizá-los da maneira que utilizaria um dispositivo de bloco (como um disco rígido). É possível alterar dinamicamente a configuração de um volume anexado a uma instância.
+
+O Amazon EBS é recomendado para dados que devem ser rapidamente acessíveis e requerem persistência no longo prazo. Os volumes do EBS são especialmente adequados ao uso como armazenamento principal para sistemas de arquivos, bancos de dados ou para todas as aplicações que necessitem de atualizações granulares finas e acesso ao armazenamento em nível de bloco bruto e não formatado. O Amazon EBS é ideal para aplicações no estilo de banco de dados que utilizam leituras e gravações aleatórias, bem como para aplicações com alta throughput que executam leituras e gravações longas e contínuas. Com o Amazon EBS, você paga somente por aquilo que usa. 
+
+<h2>Recursos do Amazon EBS</h2>
+
+<li>Você cria um volume do EBS em uma zona de disponibilidade específica e, em seguida, o anexa a umainstância nessa mesma zona de disponibilidade. Para tornar um volume disponível fora da zona de disponibilidade, é possível criar um snapshot e restaurá-lo em um novo volume em qualquer lugar ou região. É possível copiar os snapshots para outras regiões e então restaurá-los para novos volumes nelas, viabilizando o aproveitamento de várias regiões da AWS para expansão geográfica, migração de datacenter e a recuperação de desastres.</li><br>
+
+<li>O Amazon EBS fornece os seguintes tipos de volumes: SSD de uso geral, SSD com IOPS provisionadas, HDD otimizado para throughput e HDD a frio.</li><br>
+
+<li>É possível criar seus volumes de EBS na forma de volumes criptografados, a fim de atingir uma ampla série de requisitos de criptografia de dados em repouso para dados e aplicações regulamentados/auditados. Quando você cria um volume do EBS criptografado e o anexa a um tipo de instância com suporte, os dados armazenados em repouso no volume, E/S de disco e snapshots criados do volume são todos criptografados. A criptografia ocorre nos servidores que hospedam as instâncias do EC2, processando-se durante o trânsito dos dados entre as instâncias do EC2 e o armazenamento no EBS.</li><br>
+
+<li>É possível criar snapshots de pontos no tempo dos volumes do EBS, que são persistidos no Amazon S3. Os snapshots protegem os dados para durabilidade de longo prazo, e eles podem ser usados como ponto inicial para novos volumes do EBS. O mesmo snapshot pode ser utilizado para criar quantos volumes forem necessários. Esses snapshots podem ser copiados nas regiões da AWS.</li><br>
+
+<li>As métricas de performance, como a largura de banda, a throughput, a latência e o tamanho da fila média, estão disponíveis por meio do AWS Management Console. Essas métricas, fornecidas pelo Amazon CloudWatch, permitem que você monitore a performance de seus volumes para garantir que você forneça performance suficiente para suas aplicações sem pagar por recursos de que não precisa.</li><br>
