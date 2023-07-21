@@ -17,3 +17,13 @@ Integrado com IAM para segurança, autorização e administração.
 Recursos de baixo custo e dimensionamento automático.
 
 Classe de tabela IA de acesso padrão e não frequente
+
+<h2>DynamoDB Accelerator - DAX</h2>
+
+Totalmente gerenciado no cache da memória pelo DynamoDB.
+
+Ganho de 10x em performance. Latencia de milisegundos para microsegundos ao acessar as tabelas.
+
+Seguro, altamente escalável e sempre disponível.
+
+Dax só é usado para e integrado com o DynamoDB, enquanto o ElastCache pode ser utilizado para outros bancos de dados.
