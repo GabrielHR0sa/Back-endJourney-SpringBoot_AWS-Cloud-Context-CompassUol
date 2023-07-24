@@ -50,8 +50,8 @@ A semana onze abordou novamento conceitos de uma Rest Api, com Java, Spring e Sp
 
 Na décima segunda semana tive outro desafio, onde pude colocar em prática todos o aprendizados do PB. No desafio tive que criar uma Aplicação utilizando Java, Spring Boot e MySQL utilizando conceitos de segurança como autenticação e autorização e microserviços.
 
-<h2>📅 Week 13</h2>
+<h2>📅 Weeks 13, 14, 15, 16 e 17</h2>
 
-A décima terceira semana me introduziu a AWS, trazendo conhecimentos necessários para a certificação AWS Practitioner. Fui apresentado a conceitos básicos de tecnologias AWS e mais sobre a certificação.
+A partir da décima terceira semana fui introduzido a AWS, trazendo conhecimentos necessários para a certificação AWS Practitioner. Fui apresentado a conceitos básicos de tecnologias AWS e mais sobre a certificação. Nas demais pude conhecer a fundo sobre os conteúdos que caem no exame AWS Cloud Practitioner.
 
 <hr>
