@@ -1,0 +1,11 @@
+<h1 align="center">Tracking Costs in the Cloud - Costs Explorer</h1>
+
+O Cost Explorer é uma ferramenta que permite visualizar e analisar seus custos e uso. Você pode explorar seu uso e seus custos usando o gráfico principal, os relatórios de custo e uso do Cost Explorer ou os relatórios de RI do Cost Explorer. Você pode visualizar os dados até dos últimos 12 meses, obter uma previsão de quanto você provavelmente gastará nos próximos 12 meses e obter recomendações de quais instâncias reservadas comprar. Você pode usar o Cost Explorer para identificar áreas que precisam de uma investigação mais profunda e ver tendências que você pode usar para entender seus custos.
+
+Você pode visuaizar os custos e o uso por meio da interface de usuário gratuita do Cost Explorer. Você também pode acessar seus dados programaticamente usando a API do Cost Explorer. Cada solicitação de API paginada tem um custo de US$ 0,01. Você não pode desabilitar o Cost Explorer após habilitá-lo.
+
+Além disso, o Cost Explorer fornece visualizações pré-configuradas com at-a-glance informações sobre suas tendências de custo e ajuda você a personalizar as visualizações de acordo com suas necessidades.
+
+Quando você se cadastra no Cost Explorer pela primeira vez, a AWS prepara os dados dos seus custos do mês atual e dos últimos 12 meses e, em seguida, calcula a previsão para os próximos 12 meses. Os dados do mês atual são disponibilizados para visualização em até 24 horas. O resto dos dados demoram alguns dias mais. O Cost Explorer atualiza os dados de custos pelo menos uma vez a cada 24 horas. No entanto, isso depende dos dados upstream das suas apicações de cobrança, e alguns dados podem ser atualizados depois de 24 horas. Depois de se cadastrar, o Cost Explorer pode exibir até 12 meses de dados históricos (se você tiver essa quantidade), o mês atual e os custos previstos para os próximos 12 meses. Na primeira vez que você usar o Cost Explorer, ele apresentará você às principais partes do console com uma explicação de cada seção.
+
+O Cost Explorer usa o mesmo conjunto de dados usado para gerar os relatórios de uso e de custos da AWS e os relatórios detalhados de faturamento.
