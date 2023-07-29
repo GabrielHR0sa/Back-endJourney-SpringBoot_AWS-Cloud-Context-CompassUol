@@ -1,0 +1,3 @@
+<h1 align="center">Amazon WorkSpace</h1>
+
+Amazon WorkSpace é um desktop virtual na cloud que atua como substituto de um desktop tradicional. Um WorkSpace é disponibilizado na forma de um pacote com sistema operacional, recursos computacionais, espaço de armazenamento e aplicações de software que permitem a um usuário executar tarefas do dia a dia da mesma forma como faria com um desktop tradicional.
