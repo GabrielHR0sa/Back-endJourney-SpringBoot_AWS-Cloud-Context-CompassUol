@@ -386,43 +386,71 @@ S3, DynamoDB, Lambda
 
 `Relacionais`
 
+Organizam os dados em tabelas com linhas e colunas, seguindo esquemas predefinidos. As relações entre as tabelas são estabelecidas por meio de chaves primárias e estrangeiras, garantindo integridade e consistência.
+
     tabelas, se relacionam com outros dados
 
     usa-se a linguagem SQL para consultas
 
 `RDS` Relational Database Service
 
-    Operar e dimensionar um bvanco de dados relacional
+    Serviço relacional gerenciado pela AWS
 
-    Amazon Aurora
+    Suporta uma variedade de mecanismos de banco de dados relacionais como MySQL, PostgreSQL, Oracle, Microsoft SQL Server e MariaDB
 
-    PostgreSQL
+    Gerencia automáticamente tarefas de manutenção como backups regulares, aplicações de patches e atualizações do mecanismo do banco de dados
 
-    MySQL
+    Permite escalabilidade vertical (aumentar a capacidade dos recursos) e horizontal (adicionar read replicas)
 
-    MariaDB
+    Oferece backups automáticos com retenção configurável
 
-    Oracle
-
-    Microsoft SQL Server
+    Oferece implantação em várias zonas de disponíbilidade.
 
 `Aurora`
 
     Banco de dados relacional  da AWS, replica em varias AZs
 
+    Compatível com MySQL e PostgreSQL
+
+    Oferece desempenho 5x maior em MySQL e 3x maior em PostgreSQL
+
+    Pode criar até 15 réplicas para leitura
+
+    Armazena dados em blocos de 10 GB
+
+    Possui um mecanismo de recuperação de falhas rápida
+
+    Realiza backups automáticos
+
+    Pode ser escalado verticalmente (aumentando seu poder computacional) e horizontalmente (adicionando read replicas)
+
+
+
 `Não relacionais`
 
-    relacionamento chave e valor
+Os bancos de dados não relacionais (NoSQL) não seguem o modelo tabular. Podem ser baseados em diferentes modelos de dados, como documentos, chave valor, coluna ou grafo. Isso permite uma flexibilidade maior na modelagem de dados.
+
+    Relacionamento chave e valor
 
 `DynamoDB`
 
-    serverless
+    Serverless
 
-    chave valor
+    Chave valor
 
-    dimensionado automaticamente para se ajustar as alterações de capacidade e manter o desempenho consistente
+    Banco de dados NoSQL que suporta modelos de dados flexíveis
 
-    foi projetado para lidar com mais de 10 trilhões de solicitações por dia
+    Escala horizontalmente de forma automática
+
+    Otimizado para fornecer de forma atomática
+
+    Otimizado para fornecer baixa latência de leitura e gravação
+
+    Oferece backups automáticos com retenção de até 35 dias
+
+    Suporta KMS, também permite criptografia SSL/TLS
+
+    Pague somente pelo armazenamento e pelos recursos que utiliza gravação e leitura
 
 <h2>Serviços de migração de banco de dados</h2>
 
@@ -430,19 +458,69 @@ S3, DynamoDB, Lambda
 
     Se conecta a origem e migra para o destino
 
+    Facilita a migração de dados de um banco para outro
+
+    Suporta migrações de diferentes bancos
+
+    Fornece métricas e logs que permitem monitorar o progresso da migração ou replicação
+
+`Athena`
+
+    Permite consulta interativa, executa consultas SQL em dados armazenados em S3
+
+    Suas consultas são divididas em tarefas menores
+
+    Permite consultas em formatos variádos, como CSV, JSON, Parquet, Avro, ORC e outros
+
+    Pague somente pelas consultas que executa
+
+    Pode ser integrada com ferramentas de visualização, Tableau, Amazon Quicksight
+
 `Redshift`
 
-    data warehouse
+    É um serviço de data warehouse, projetado para analize de dados de grande escala e consultas complexas
 
-    consultar e analizar dados
+    Usa arquitetura colunar, os dados são armazenados em colunas
+
+    Permite aumentar ou diminuir a capacidade de armazenamento e computação de acordo com as necessidades
+
+    Oferece backups automáticos e a capacidade de criar snapshots manuais
 
 `DocumentDB`
 
-    executar cargas de trabahlo do MongoDB
+    executar cargas de trabalho do MongoDB
+
+    Oferece a capacidade de escalar verticalmente
+
+    Cria automaticamente rélicas em varias AZs
+
+    Oferece backups automatizados e a capacidade de criar snapshots manuais
 
 `Neptune`
 
-    Executar aplicativos que usam conjuntos de dados altamente conectados
+    Otimizado para o armazendamento e consulta de dados em formato de grafo
+
+    Projetado para armazenar, consultar e processar dados
+
+    Útil para modelar relacionamentos complexos e consultas de redes interconectadas
+
+    Suporta as línguagens Gremlin e SPARQL
+
+    Oferece replicação e failover automáticos para garantir alta disponibilidade e recuperação de falhas
+
+    Oferece backups automáticos e a capacidade de criar snapshots manuais
+
+`EMR` Elastic Map Reduce
+
+    Serviço Big Data
+
+    Facilita a criação e o gerenciamento de clusters de processamento de dados distribuídos
+
+    Projetado para executar processamento de dados em larga escala
+
+    Haddop, Spark, Hive, Hbase
+
+    Pode ser integrado com outros serviços como IAM, S3, CloudWatch
 
 `Amazon QLDB`
 
@@ -450,15 +528,43 @@ S3, DynamoDB, Lambda
 
 `Amazon Managed Block chain`
 
-    executar dados contabeis descentralizado
+    Serviço que facilita a criação, implantação e gerenciamento de redes de blockchain
+
+    Suporta os frameworks de blockchain Hyperledger Fabric e Ethereum
 
 `ElastiCache`
 
-    adicionar camadas de cache para melhorar os tempos de leitura do banco de dados
+    Permite que você crie e gerencie caches em memória
+
+    Suporta mecanismos de cache em memória Redis e Memcached
+
+    Permite a escalabilidade horizontal, adicionando ou removendo nós de cache conforme o necessário
+
+    Oferece recursos de backups automáticos e manuais
 
 `DynamoDB Accelerator` DAX
 
     melhora os tempos de resposta do DynamoDB
+
+`Glue`
+
+    Serviço ETL (Extração, Transformação e Carga)
+
+    Oferece um catálogo de metadados unificado que rastreia e organiza os dados em diferentes fontes
+
+    Dimensiona automaticamente os recursos de processamentos e na quantidade de dados processados
+
+    Suporta grandes volumes de dados, tornando-o adequado para data lakes
+
+`QuickSight`
+
+    Permite criar visualizações interativas e painéis de controle para análise de dados
+
+    Oferece uma grnade variedade de tipos de visualizações, como gráficos, tabelas, mapas e muito mais.
+
+    Suporta conexões a várias fontes de dados, Redshift, RDS, S3, Salesforce
+
+    Permite a criação de paíneis de controle personalizados
 
 <hr>
 
