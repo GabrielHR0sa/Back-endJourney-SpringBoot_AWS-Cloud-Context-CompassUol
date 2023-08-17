@@ -452,7 +452,7 @@ Os bancos de dados não relacionais (NoSQL) não seguem o modelo tabular. Podem 
 
     Pague somente pelo armazenamento e pelos recursos que utiliza gravação e leitura
 
-<h2>Serviços de migração de banco de dados</h2>
+<h2>Outros serviços de banco de dados</h2>
 
 `DMS` Database Migration Service
 
