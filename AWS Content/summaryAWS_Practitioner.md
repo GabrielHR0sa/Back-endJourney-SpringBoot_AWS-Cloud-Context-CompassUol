@@ -711,9 +711,15 @@ Proteção ou zona de segurança de serviços e comunicação, que pode exigir q
 
     ajuda na parte de criptografia
 
-    ajuda os clientes a executar operações de criptografia por meio do usop de chaves criptografádas
+    ajuda os clientes a executar operações de criptografia por meio do uso de chaves criptografadas
 
     pode escolher niveis específicos de controle de acesso que você precisar para suas chaves
+
+`Cloud HSM`
+
+    A AWS provisiona o hardware, mas nós gerenciamos as chaves criptografadas
+
+    É provisionado um hardware de segurança dedicado (HSM - Haardware Security Module)
 
 `GuardDuty`
 
@@ -726,6 +732,72 @@ Proteção ou zona de segurança de serviços e comunicação, que pode exigir q
     Revise as descobertas detalhadas e tome medidas
 
     Somente avisa sobre os erros
+
+`Certificate Manager (ACM)`
+
+    É um serviço para provisionar, gerenciar e implantar facilmente certificados SSL ou TSL
+
+    Usados para fornecer criptografia in-flight para seus sites, fornecendo endpoints HTTPS
+
+`Secrets Manager`
+
+    É um serviço para guardar segredos, possue a capacidade de forçar a rotação de segredos durante X dias
+
+    A rotação de seggredos pode ser utilizando Lambda
+
+`Config`
+
+    Ajuda a auditar e registrar conformidade de seus recursos, registrando a configuração e suas alterações
+
+    Ajuda a gravar as configurações e mudanças ao longo do tempo
+
+    É possível guardar as informações no S3 para serem analizadas pelo Athena
+
+    Questões que podem ser resolvidas com o AWS Config:
+
+    Há algum acesso SSH irrestrito para meu grupo de segurança?
+
+    Meus buckets possuem algum acesso público?
+
+    Como minha configuração ALB mudou ao longo do tempo?
+
+    Você pode receber alertas via SNS para qualquer mudança
+
+    É um serviço por região
+
+`Macie`
+
+    É um serviço gerenciado que usa machine learning para descobrir  e proteger dados sensíveis na AWS
+
+`Security Hub`
+
+    Ferramenta de segurança para gerenciar a segurança de todas as contas AWS e automatizar os checks de segurança
+
+    Dashboard integrado mostrando o atual estado de segurança
+
+`Detective`
+
+    Utilizado para analizar, identificar rapidamente a causa raiz de um problem de segurança ou atividade suspeita usando machine learning
+
+`AWS Abuse`
+
+    Usado para reportar atividades envolvendo IP da AWS, como ataques, spams, ataques DDOS
+
+    Entre em contato com o Abuse Team
+
+`Control Tower`
+
+    É uma maneira fácil de configurar e administrar um ambiente AWS seguro e compatível com várias contas
+
+    Oferece uma abordagem centralizada para gerenciar várias contas, implementando boas práticas de segurança e conformidade em toda a infraestrutura
+
+    Benefícios:
+        Gerenciamento de várias contas
+        Configuração automatizada
+        Baseline de segurança
+        Customizações controladas
+        Blue Prints e Landing Zones
+        Monitoramento e auditoria
 
 <hr>
 
@@ -762,6 +834,13 @@ Proteção ou zona de segurança de serviços e comunicação, que pode exigir q
     Otimização de custo, performance, segurança, tolerância de flahas e limites de serviço
 
     Quanto maior o nível de suporte, maior o numero de verificações que serão possíveis de realizar.
+
+`Services Catalog`
+
+    É um serviço que permite que os administradores criem e gerenciem um catálogo de serviços e recursos da AWS.
+
+    Esses recursos podem ser pré configurados de acordo com as melhores práticas da empresa e disponibiliza-los 
+    para os usuários de maneira fácil e controlada 
 
 <hr>
 
